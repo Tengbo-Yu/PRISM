@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PRISM is a large-scale multimodal dataset for contact-rich real-world industrial manipulation." />
+  <meta name="keywords" content="PRISM, robotics, multimodal dataset, contact-rich manipulation, industrial manipulation, tactile sensing, force torque" />
+  <meta name="author" content="Tengbo Yu, Jiahao Wu, Hanning Wang, Rui Chen, Chuanhou Liu, Chuang Sun, Hangxin Liu" />
+
+  <meta property="og:title" content="PRISM Precision and contact-rich Real-world Industrial Skill Dataset with Multimodal Sensing" />
+  <meta property="og:description" content="A large-scale multimodal dataset for contact-rich real-world industrial manipulation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/overview_v2.png" />
+
+  <title>PRISM Dataset</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar" aria-label="Page navigation">
+      <a class="nav-brand" href="#">PRISM</a>
+      <div class="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#overview">Overview</a>
+        <a href="#collection">Platform</a>
+        <a href="#video">Video</a>
+        <a href="#bibtex">BibTeX</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <h1 class="site-title">
+        <span class="brand">PRISM</span>
+        <span class="title-subline">Precision and contact-rich Real-world Industrial Skill Dataset with Multimodal Sensing</span>
+      </h1>
+      <p class="subtitle">A large-scale multimodal dataset for contact-rich real-world 
+        <br />
+        industrial manipulation.</p>
+
+      <p class="authors">
+        <a href="https://tengbo-yu.github.io/" target="_blank" rel="noopener noreferrer">Tengbo Yu</a><sup>1,2</sup>, Jiahao Wu<sup>2</sup>, Hanning Wang<sup>1</sup>, Rui Chen<sup>3</sup>,
+        Chuanhou Liu<sup>4</sup>, Chuang Sun<sup>5</sup>, <a href="https://liuhx111.github.io/" target="_blank" rel="noopener noreferrer">Hangxin Liu</a><sup>1†</sup>
+      </p>
+      <p class="affiliations">
+        <span><sup>1</sup>Peking University · <sup>2</sup>Delta Intelligence · <sup>3</sup>PKU-Wuhan Institute for Artificial Intelligence</span>
+        <br />
+        <span><sup>4</sup>Hubei Humanoid Robot Innovation Center · <sup>5</sup>CAICT</span>
+      </p>
+
+      <div class="resource-buttons" aria-label="Project resources">
+        <a class="resource-button paper" href="assets/pdf/prism_paper.pdf" aria-label="Open paper PDF">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img"><path d="M6 2.75h8.1L19 7.65v13.6H6V2.75Zm7.35 1.9v4h3.95l-3.95-4ZM8.4 12.2h8.2v-1.55H8.4v1.55Zm0 3.4h8.2v-1.55H8.4v1.55Zm0 3.35h5.8V17.4H8.4v1.55Z" /></svg>
+          </span>
+          <span>Paper</span>
+        </a>
+        <a class="resource-button arxiv disabled" href="#" aria-label="arXiv link coming soon">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img"><path d="M5.2 18.8 10.45 12 5.2 5.2h3.05l3.72 4.9 3.78-4.9h3.05L13.55 12l5.25 6.8h-3.08l-3.75-4.92-3.72 4.92H5.2Z" /></svg>
+          </span>
+          <span>arXiv</span>
+          <small>soon</small>
+        </a>
+        <a class="resource-button modelscope disabled" href="#" aria-label="ModelScope link coming soon">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img"><path d="M12 2.6 20.2 7.3v9.4L12 21.4l-8.2-4.7V7.3L12 2.6Zm0 3.05L6.45 8.82v6.36L12 18.35l5.55-3.17V8.82L12 5.65Zm-3.95 8.9V9.45h2.3l1.65 2.66 1.65-2.66h2.3v5.1h-1.82v-2.76l-1.5 2.35h-1.26l-1.5-2.35v2.76H8.05Z" /></svg>
+          </span>
+          <span>ModelScope</span>
+          <small>soon</small>
+        </a>
+        <a class="resource-button github disabled" href="#" aria-label="GitHub link coming soon">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img"><path d="M12 2.4a9.7 9.7 0 0 0-3.07 18.9c.49.09.67-.21.67-.47 0-.23-.01-.84-.01-1.65-2.73.59-3.31-1.16-3.31-1.16-.45-1.13-1.1-1.43-1.1-1.43-.9-.61.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.88 1.51 2.32 1.07 2.89.82.09-.64.35-1.07.63-1.32-2.18-.25-4.47-1.09-4.47-4.85 0-1.07.38-1.95 1.02-2.63-.1-.25-.44-1.25.1-2.6 0 0 .83-.27 2.72 1.01A9.36 9.36 0 0 1 12 7.12c.84 0 1.69.11 2.48.33 1.89-1.28 2.72-1.01 2.72-1.01.54 1.35.2 2.35.1 2.6.64.68 1.02 1.56 1.02 2.63 0 3.77-2.3 4.59-4.49 4.84.36.31.67.91.67 1.84 0 1.33-.01 2.4-.01 2.73 0 .26.18.57.68.47A9.7 9.7 0 0 0 12 2.4Z" /></svg>
+          </span>
+          <span>GitHub</span>
+          <small>soon</small>
+        </a>
+        <a class="resource-button video" href="https://www.youtube.com/watch?v=X1uIIsTOtGc" target="_blank" rel="noopener noreferrer" aria-label="Open PRISM project video on YouTube">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img"><path d="M21.4 7.15a2.7 2.7 0 0 0-1.9-1.92C17.82 4.8 12 4.8 12 4.8s-5.82 0-7.5.43a2.7 2.7 0 0 0-1.9 1.92A28 28 0 0 0 2.15 12c0 1.64.15 3.22.45 4.85a2.7 2.7 0 0 0 1.9 1.92c1.68.43 7.5.43 7.5.43s5.82 0 7.5-.43a2.7 2.7 0 0 0 1.9-1.92c.3-1.63.45-3.21.45-4.85s-.15-3.22-.45-4.85ZM10.05 15.1V8.9L15.45 12l-5.4 3.1Z" /></svg>
+          </span>
+          <span>Video</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <br />
+    <section class="section" id="abstract">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <h2>Abstract</h2>
+      </div>
+      <div class="card text-card">
+        <p>
+          Recent progress in robotic learning has been fueled by large-scale datasets collected in everyday environments.
+          However, most existing datasets emphasize short-horizon, low-contact tasks such as pick-and-place, and therefore
+          do not capture the precision control, force/torque or tactile regulation, and multimodal feedback required for
+          industrial assembly. To address this gap, we introduce <strong>PRISM</strong>, a large-scale multimodal dataset for
+          contact-rich industrial operations.
+        </p>
+        <p>
+          The dataset spans more than 25 manipulation tasks, including electronic component plug/unplug and conveyor-based
+          sorting, and covers diverse mechanical constraints. PRISM includes more than 5,000 robot trajectories with paired
+          human demonstrations, totaling over 45 hours of data, recorded using synchronized multi-view RGB-D, force/torque,
+          tactile, and robot-state measurements. PRISM provides a realistic benchmark for multimodal perception and control
+          under high-precision industrial constraints, and serves as a foundation for contact-rich, generalizable manipulation
+          in real-world manufacturing environments.
+        </p>
+      </div>
+    </section>
+
+    <section class="section stats-section" aria-labelledby="dataset-numbers-title">
+      <div class="section-heading compact">
+        <span class="section-number">02</span>
+        <h2 id="dataset-numbers-title">Data Volume</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <strong>25+</strong>
+          <span>Industrial Tasks</span>
+        </article>
+        <article class="stat-card">
+          <strong>5,000+</strong>
+          <span>Robot Trajectories</span>
+        </article>
+        <article class="stat-card">
+          <strong>5,000+</strong>
+          <span>Human Demonstrations</span>
+        </article>
+        <article class="stat-card">
+          <strong>45+</strong>
+          <span>Hours</span>
+        </article>
+        <article class="stat-card">
+          <strong>~27M</strong>
+          <span>Images</span>
+        </article>
+        <article class="stat-card">
+          <strong>RGB-D</strong>
+          <span>Multi-view Vision</span>
+        </article>
+        <article class="stat-card">
+          <strong>6DoF F/T</strong>
+          <span>Contact Sensing</span>
+        </article>
+        <article class="stat-card">
+          <strong>Tactile</strong>
+          <span>+ Proprioception</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <h2>Overview</h2>
+      </div>
+      <figure class="figure-card wide-figure">
+        <img src="assets/images/overview_v2.png" alt="Overview of the PRISM multimodal industrial manipulation dataset" />
+        <figcaption>Fig. 1. Overview of PRISM, a multimodal dataset for contact-rich real-world industrial manipulation.</figcaption>
+      </figure>
+      <div class="card description-card">
+        <p>
+          PRISM is designed for high-precision industrial manipulation where contact, force regulation, and multimodal feedback
+          are essential. The dataset covers multi-robot embodiments, multi-view observations, multimodal sensing streams, and
+          diverse industrial skills. Each episode is recorded with synchronized visual, tactile, force/torque, and proprioceptive
+          signals, enabling the study of contact-rich manipulation beyond short-horizon, low-contact tasks.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <h2>Data Collection Platform</h2>
+      </div>
+      <figure class="figure-card wide-figure">
+        <img src="assets/images/teleoperation_v2.png" alt="Three teleoperation platforms used to collect the PRISM dataset" />
+        <figcaption>Fig. 2. Illustration of the PRISM data collection platforms with multi-view RGB-D cameras.</figcaption>
+      </figure>
+      <div class="card description-card">
+        <p>
+          PRISM collects demonstrations using three complementary teleoperation interfaces: exoskeleton-based control,
+          tracker-based control, and VR-based control. These platforms introduce different human control styles and reduce
+          the bias of any single collection setup. Across the platforms, PRISM records robot states, multi-view RGB-D images,
+          force/torque measurements, tactile observations, and gripper states with timestamps for multimodal alignment.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="section-heading">
+        <span class="section-number">05</span>
+        <h2>Video</h2>
+      </div>
+      <div class="video-card">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/X1uIIsTOtGc?si=dwMSeUIGTxb7CEw4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="section" id="bibtex">
+      <div class="section-heading">
+        <span class="section-number">06</span>
+        <h2>BibTeX</h2>
+      </div>
+      <div class="card bibtex-card">
+        <pre><code>coming soon</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© PRISM Dataset. This project page will be updated with paper, arXiv, ModelScope, and GitHub links.</p>
+  </footer>
+</body>
+</html>
