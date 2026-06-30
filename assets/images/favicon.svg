@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="prismText" x1="116" y1="256" x2="396" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f88d6"/>
+      <stop offset="0.36" stop-color="#ef4f7a"/>
+      <stop offset="0.68" stop-color="#d94f69"/>
+      <stop offset="1" stop-color="#1fc49b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="#f7f9fc"/>
+
+  <g opacity="0.28">
+    <ellipse cx="175" cy="206" rx="125" ry="78" fill="#dcecff" transform="rotate(-16 175 206)"/>
+    <ellipse cx="352" cy="190" rx="132" ry="84" fill="#ffe3ed" transform="rotate(16 352 190)"/>
+    <ellipse cx="245" cy="330" rx="148" ry="86" fill="#ddf7ef" transform="rotate(10 245 330)"/>
+  </g>
+
+  <g filter="url(#softShadow)" fill="none" stroke-linecap="round" stroke-width="34" opacity="0.68">
+    <path d="M126 256 A130 130 0 0 1 256 126" stroke="#88bee8"/>
+    <path d="M256 126 A130 130 0 0 1 386 256" stroke="#f2b8ca"/>
+    <path d="M386 256 A130 130 0 0 1 256 386" stroke="#f5d99a"/>
+    <path d="M256 386 A130 130 0 0 1 126 256" stroke="#8edfcc"/>
+  </g>
+
+  <text x="256" y="280"
+        text-anchor="middle"
+        fill="url(#prismText)"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="91"
+        font-weight="900"
+        letter-spacing="-6">PRISM</text>
+</svg>
