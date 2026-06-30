@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://tengbo-yu.github.io/PRISM/"><img src="https://img.shields.io/badge/Project%20Page-PRISM-6d5be7" alt="Project Page"></a>
-  <a href="assets/pdf/prism_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-2563eb" alt="Paper"></a>
+  <a href="https://tengbo-yu.github.io/PRISM/assets/pdf/prism_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-2563eb" alt="Paper"></a>
   <img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b" alt="arXiv coming soon">
   <img src="https://img.shields.io/badge/ModelScope-coming%20soon-7c3aed" alt="ModelScope coming soon">
   <a href="https://www.youtube.com/watch?v=X1uIIsTOtGc"><img src="https://img.shields.io/badge/Video-YouTube-ff0000?logo=youtube&logoColor=white" alt="Video"></a>
