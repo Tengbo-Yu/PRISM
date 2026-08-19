@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://tengbo-yu.github.io/PRISM/"><img src="https://img.shields.io/badge/Project%20Page-PRISM-6d5be7" alt="Project Page"></a>
   <a href="https://tengbo-yu.github.io/PRISM/assets/pdf/prism_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-2563eb" alt="Paper"></a>
-  <img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b" alt="arXiv coming soon">
+  <img src="https://arxiv.org/abs/2608.17962" alt="arXiv">
   <img src="https://img.shields.io/badge/ModelScope-coming%20soon-7c3aed" alt="Dataset coming soon">
   <a href="https://www.youtube.com/watch?v=X1uIIsTOtGc"><img src="https://img.shields.io/badge/Video-YouTube-ff0000?logo=youtube&logoColor=white" alt="Video"></a>
 </p>
@@ -38,4 +38,14 @@ PRISM addresses this gap by collecting diverse industrial manipulation demonstra
 
 ## Citation
 
-BibTeX will be released soon.
+```
+@misc{yu2026prismprecisioncontactrichrealworld,
+      title={PRISM: Precision and contact-rich Real-world Industrial Skill dataset with Multimodal sensing}, 
+      author={Tengbo Yu and Jiahao Wu and Hanning Wang and Rui Chen and Chuanhou Liu and Chuang Sun and Hangxin Liu},
+      year={2026},
+      eprint={2608.17962},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2608.17962}, 
+}
+```
